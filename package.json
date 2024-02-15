@@ -1,0 +1,22 @@
+{
+  "name": "@byhako/tailwind-plugin-animation",
+  "version": "0.0.1",
+  "description": "Tailwind css plugin to add animations to you website",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ruben E Acosta (@byhako)",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^17.1.0",
+    "tailwindcss": "^3.4.1"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
