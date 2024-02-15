@@ -5,21 +5,27 @@ import theme from './theme.js'
 const pluginCreator = (api) => {
   const { theme, matchUtilities } = api
 
-  matchUtilities({
-    'animate-delay': value => ({
-      'animation-delay': value
-    })
-  }, {
-    values: theme('animationDelay')
+  const dynamicUtils = {
+    'animate-delay': { css: 'animation-delay', values: theme('animationDelay') },
+    'animate-duration': { css: 'animation-duration', values: theme('animationDuration') }
+  }
+
+  Object.entries(dynamicUtils).forEach(([key, { css, values }]) => {
+    matchUtilities(
+      {
+        [key]: value => ({ [css]: value })
+      },
+      { values }
+    )
   })
 
-  matchUtilities({
-    'animate-duration': value => ({
-      'animation-duration': value
-    })
-  }, {
-    values: theme('animationDuration')
-  })
+  // matchUtilities({
+  //   'animate-delay': value => ({
+  //     'animation-delay': value
+  //   })
+  // }, {
+  //   values: theme('animationDelay')
+  // })
 }
 
 /** @type {import('tailwindcss/types/config').Config} */
