@@ -14,10 +14,10 @@ export default {
     'rotate-360': 'rotate-360 1s linear',
     'flip-horizontal': 'flip-horizontal 1s ease-in-out',
     'flip-vertical': 'flip-vertical 1s ease-in-out',
-    bounce: 'bounce 1s ease-in-out',
+    bouncing: 'bouncing 1s ease-in-out',
     swing: 'swing 1s ease-in-out',
     wobble: 'wobble 1s ease-in-out',
-    pulse: 'pulse 1s ease-in-out',
+    pulsar: 'pulsar 1s ease-in-out',
     shake: 'shake 0.5s ease-in-out',
     tada: 'tada 1s ease-in-out',
     jump: 'jump 1s ease-in-out',
@@ -72,7 +72,7 @@ export default {
     'slide-up-fade': 'slide-up-fade 0.6s ease-out',
     'bounce-fade-in': 'bounce-fade-in 0.6s ease-out',
     'swing-drop-in': 'swing-drop-in 0.6s ease-out',
-    'pulse-fade-in': 'pulse-fade-in 0.6s ease-out'
+    'pulsar-fade-in': 'pulsar-fade-in 0.6s ease-out'
   },
   keyframes: {
     'background-shine': {
@@ -135,7 +135,7 @@ export default {
       '0%': { transform: 'rotateX(0deg)' },
       '100%': { transform: 'rotateX(180deg)' }
     },
-    bounce: {
+    bouncing: {
       '0%': { transform: 'translateY(0)' },
       '50%': { transform: 'translateY(-10px)' },
       '100%': { transform: 'translateY(0)' }
@@ -154,7 +154,7 @@ export default {
       '75%': { transform: 'translateX(-5%)' },
       '100%': { transform: 'translateX(0)' }
     },
-    pulse: {
+    pulsar: {
       '0%': { transform: 'scale(1)' },
       '50%': { transform: 'scale(1.1)' },
       '100%': { transform: 'scale(1)' }
@@ -412,7 +412,7 @@ export default {
       '0%': { transform: 'rotate(-30deg) translateY(-50px)', opacity: '0' },
       '100%': { transform: 'rotate(0deg) translateY(0)', opacity: '1' }
     },
-    'pulse-fade-in': {
+    'pulsar-fade-in': {
       '0%': { transform: 'scale(0.9)', opacity: '0' },
       '50%': { transform: 'scale(1.05)', opacity: '0.5' },
       '100%': { transform: 'scale(1)', opacity: '1' }
