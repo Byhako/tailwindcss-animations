@@ -444,6 +444,11 @@ export default {
     700: '700ms',
     800: '800ms',
     900: '900ms',
-    1000: '1000ms'
+    1000: '1000ms',
+    slower: '500ms',
+    slow: '400ms',
+    normal: '300ms',
+    fast: '200ms',
+    faster: '100ms'
   }
 }

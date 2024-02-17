@@ -34,11 +34,27 @@ describe('tailwind animations plugin', () => {
     expect(css).toMatch('.animate-duration-300{animation-duration:300ms}')
   })
 
+  it('use a predefined name animation duration', async () => {
+    const css = await generatePluginCSS({
+      content: '<div class="animate-duration-normal">Ruben</div>'
+    })
+
+    expect(css).toMatch('.animate-duration-normal{animation-duration:300ms}')
+  })
+
   it('use a custom animation duration', async () => {
     const css = await generatePluginCSS({
       content: '<div class="animate-duration-[341ms]">Ruben</div>'
     })
 
     expect(css).toMatch('.animate-duration-\\[341ms\\]{animation-duration:341ms}')
+  })
+
+  it('use a timing function animation', async () => {
+    const css = await generatePluginCSS({
+      content: '<div class="animate-ease">Ruben</div>'
+    })
+
+    expect(css).toMatch('.animate-ease{animation-timing-function:ease}')
   })
 })
