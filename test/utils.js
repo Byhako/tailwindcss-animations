@@ -21,6 +21,6 @@ export function generatePluginCSS (options = {}) {
     .then(result => result.css)
 }
 
-console.log(await generatePluginCSS({
+console.info(await generatePluginCSS({
   content: '<div class="animate-zoom-in">Ruben</div>'
 }))

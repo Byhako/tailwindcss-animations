@@ -1,2 +1,25 @@
 node_modules
 pnpm-lock.yaml
+
+# build output
+web/dist/
+
+# generated types
+web/.astro/
+
+# dependencies
+web/node_modules/
+
+# logs
+web/npm-debug.log*
+web/yarndebug.log*
+web/yarn-error.log*
+web/pnpm-debug.log*
+web/pnpm-lock.yaml
+
+# environment variables
+web/.env
+web/.env.production
+
+# macOS-specific files
+web/.DS_Store
