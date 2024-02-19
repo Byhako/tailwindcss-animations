@@ -11,14 +11,14 @@
   "author": "Ruben E Acosta (@byhako)",
   "license": "MIT",
   "devDependencies": {
-    "@csstools/postcss-minify": "^1.1.0",
-    "postcss": "^8.4.35",
-    "standard": "^17.1.0",
-    "tailwindcss": "^3.4.1",
-    "vitest": "^1.2.2"
+    "@csstools/postcss-minify": "1.1.0",
+    "postcss": "8.4.35",
+    "standard": "17.1.0",
+    "tailwindcss": "3.4.1",
+    "vitest": "1.2.2"
   },
   "peerDependencies": {
-    "tailwindcss": "^3.0.0"
+    "tailwindcss": "3.0.0"
   },
   "eslintConfig": {
     "extends": "standard"

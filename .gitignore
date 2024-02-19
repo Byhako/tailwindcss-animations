@@ -1,9 +1,6 @@
 node_modules
 pnpm-lock.yaml
 
-# build output
-web/dist/
-
 # generated types
 web/.astro/
 
