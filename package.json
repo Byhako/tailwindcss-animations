@@ -1,6 +1,6 @@
 {
   "name": "@byhako/tailwind-plugin-animation",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Tailwind css plugin to add animations to you website",
   "main": "./src/index.js",
   "type": "module",
