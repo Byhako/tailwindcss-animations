@@ -2,7 +2,7 @@
 
 Basado en las animaciones de [ibelick](https://animation.ibelick.com/)
 
-<code>npm install @byhako/tailwindcss-animations</code>
+<code>npm install @byhako/tailwind-plugin-animation</code>
 
 
 
